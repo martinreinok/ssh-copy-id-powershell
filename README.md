@@ -1,2 +1,28 @@
-# ssh-copy-id-powershell
-Installs ssh-copy-id function to powershell $profile
+# ssh-copy-id for Powershell
+NOTE: This is just a workaround as of currently the command "ssh-copy-id" does not exist for Powershell.
+
+## Example
+```powershell
+PowerShell 7.2.4
+Copyright (c) Microsoft Corporation.
+
+https://aka.ms/powershell
+Type 'help' to get help.
+
+PS C:\Users\Kr> ssh-copy-id
+WARNING:
+Please include parameter: host@address
+Optionally include ssh_options (eg '-p port')
+PS C:\Users\Kr> ssh-copy-id root@123.123.123.123 "-p 12345"
+```
+
+## Install
+(Windows only)
+Right click the .ps1 script and Run using Powershell
+
+## Uninstall
+Open the $profile file and delete the function
+
+```
+notepad $profile
+```
