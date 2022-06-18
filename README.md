@@ -17,8 +17,9 @@ PS C:\Users\Kr> ssh-copy-id root@123.123.123.123 "-p 12345"
 ```
 
 ## Install
-(Windows only)
-Right click the .ps1 script and Run using Powershell
+(Windows only)  
+Right click the .ps1 script and Run using Powershell,  
+Or copy the contents of the .ps1 file to Powershell.
 
 ## Uninstall
 Open the $profile file and delete the function
