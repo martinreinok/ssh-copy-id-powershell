@@ -3,16 +3,10 @@ NOTE: This is just a workaround as of currently the command "ssh-copy-id" does n
 
 ## Example
 ```
-PowerShell 7.2.4
-Copyright (c) Microsoft Corporation.
-
-https://aka.ms/powershell
-Type 'help' to get help.
-
 PS C:\Users\Kr> ssh-copy-id
 WARNING:
 Please include parameter: host@address
-Optionally include ssh_options (eg '-p port')
+Optionally include any default ssh_options (eg '-p port', default is 22)
 PS C:\Users\Kr> ssh-copy-id root@123.123.123.123 "-p 12345"
 ```
 
@@ -21,7 +15,7 @@ PS C:\Users\Kr> ssh-copy-id root@123.123.123.123 "-p 12345"
 * Right click the .ps1 script and Run using Powershell.  
 * Or copy the contents of the .ps1 file to Powershell.  
 
-Powershell window might need to be closed and reopened for the function to load.
+Powershell window needs to be reopened for the function to load.
 
 ## Usage
 After install the function will be added into Powershell $profile and loaded on every shell launch.  
